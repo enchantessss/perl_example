@@ -73,14 +73,6 @@ print "\n";
 print (6 and (3 > 9));
 print "\n";
 
-
-# precedence, High to Low
-# List Operators
-# **
-# Unary minus
-# * /
-# + -
-
 #!/usr/bin/perl
 #string2.plx
 use warnings;
@@ -102,3 +94,84 @@ print"A # has ASCII value ", ord("#"),"\n";
 print "A * has ASCII value ", ord("*"),"\n";
 print "A a has ASCII value ", ord("a"),"\n";
 print "A A has ASCII value ", ord("A"),"\n";
+
+#!/usr/bin/perl
+#strcomp1.plx
+use warnings;
+print"Which came first, the chicken or the egg? ";
+print "chicken" cmp "egg", "\n";
+print "Are dogs greater than cats? ";
+print "dog" gt "cat", "\n";
+print "Is ^ less than + ? ";
+print "^" lt "+", "\n";
+
+# precedence, High to Low
+
+# List Operators
+# ->
+# **
+# !~\
+# =~ !~
+# */%x
+# +-.
+# << >>
+# < > <= >= lt gt le ge == != <=> eq ne cmp
+# &
+# |^
+# &&
+# ||
+# .. ...
+# ?:
+# , =>
+# not
+# and
+# or xor
+
+
+#!/usr/bin/perl
+ #vars1.plx
+use warnings; 
+$name = "fred"; 
+print "My name is ", $name, "\n";
+
+#!/usr/bin/perl
+#vars4.plx
+use warnings;
+$a = 6 * 9;
+print "Six nines are ", $a, "\n";
+$a = $a + 3;
+print "Plus three is ", $a, "\n";
+$a = $a / 3;
+print "All over three is ", $a, "\n";
+$a = $a + 1;
+print "Add one is ", $a, "\n";
+
+
+
+#!/usr/bin/perl
+#scope2.plx
+use strict;
+use warnings;
+our $record = 4;
+print "We're at record ", $record, "\n";
+{
+my $record;
+$record = 7;
+print "Inside the block, we're at record ", $record, "\n"; }
+print "We're still at record ", $record, "\n";
+
+# Note:
+# Scalar variables are prefixed by a dollar sign ($), arrays begin with an at sign (@), and hashes begin with a percent sign (%)
+ 
+#!/usr/bin/perl
+#varint1.plx
+use warnings;
+use strict;
+my $name = "fred";
+print "My name is $name\n"; 
+ 
+
+ 
+ 
+ 
+
