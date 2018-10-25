@@ -170,8 +170,94 @@ use strict;
 my $name = "fred";
 print "My name is $name\n"; 
  
+#!/usr/bin/perl
+#varint3.plx
+use warnings;
+use strict;
+my $name = "fred";
+my $salutation = "Dear $name,"; 
+print $salutation, "\n";
+ 
+#!/usr/bin/perl
+ #varint4.plx
+use warnings;
+use strict;
+my $times = 8;
+print "This is the ${times}th time.\n"; 
+ 
+#!/usr/bin/perl
+#currency1.plx
+use warnings;
+use strict;
+my $yen = 180;
+print "49518 Yen is ", (49_518/$yen), " pounds\n";
+print "360 Yen is ", ( 360/$yen), " pounds\n";
+print "30510 Yen is ", (30_510/$yen), " pounds\n";
 
- 
- 
- 
+
+#!/usr/bin/perl
+##currency2.plx
+#use warnings;
+#use strict;
+#print "Currency converter\nPlease enter the exchange rate: "; 
+##my $yen = <STDIN>;
+#print "49518 Yen is ", (49_518/$yen), " pounds\n";
+#print "360 Yen is ", ( 360/$yen), " pounds\n"; 
+#print "30510 Yen is ", (30_510/$yen), " pounds\n";
+
+
+#!/user/bin/perl
+#exercise
+use warnings;
+use strict;
+print "Input a Hex Number: ";
+my $hex_num = <STDIN>;
+print "\nConvert: Dec Number is: ", hex($hex_num), "\n";
+print "Input a Oct Number: ";
+my $oct_num = <STDIN>;
+print "\nConvert: Dec Number is: ", oct($oct_num), "\n";
+
+
+#!user/bin/perl
+#exercise
+use warnings;
+use strict;
+print "Input a number less than 256: ";
+my $number = <STDIN>;
+my $bit0 = $number%2;
+$number = $number/2;
+my $bit1 = $number%2;
+$number = $number/2;
+my $bit2 = $number%2;
+$number = $number/2;
+my $bit3 = $number%2;
+$number = $number/2;
+my $bit4 = $number%2;
+$number = $number/2;
+my $bit5 = $number%2;
+$number = $number/2;
+my $bit6 = $number%2;
+$number = $number/2;
+my $bit7 = $number%2;
+print "\nConvert to Binary: ",$bit7,$bit6,$bit5,$bit4,$bit3,$bit2,$bit1,$bit0, "\n";
+
+print 2+6/4-3*5+1, "\n";
+print 17+-3**3/2, "\n";
+print 26+3^4*2, "\n";
+print 4+3>=7||2&4*2<4, "\n";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
