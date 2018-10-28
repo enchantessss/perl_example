@@ -249,7 +249,72 @@ my @number = sort { $a <=> $b } @unsorted;
 print "Numeric sort: @number\n";
 
 
+#!/usr/bin/perl
+ #hash1.plx
+use warnings;
+use strict;
+my $place = "Oregon";
+my %where=(
+        Gary     => "Dallas",
+        Lucy     => "Exeter",
+        Ian      => "Reading",
+        Samantha => "Oregon"
+);
+my %who = reverse %where;
+print "Gary lives in ", $where{Gary}, "\n";
+print "Ian lives in $where{Ian}\n";
+print "$who{Exeter} lives in Exeter\n"; 
+print "$who{$place} lives in $place\n";
+$where{Eva} = "Uxbridge";
+print "Eva lives in $where{Eva}\n";
 
+#!/usr/bin/perl
+#badhash1.plx
+use warnings;
+use strict;
+my %where=(
+    Gary     => "Dallas",
+    Lucy     => "Exeter",
+    Ian      => "Reading",
+    Samantha => "Oregon"
+);
+# delete $where{Lucy};
+# print "Lucy lives in $where{Lucy}\n";
 
+#!/usr/bin/perl
+#hash2.plx
+use warnings;
+use strict;
+my %where=(
+Gary     => "Dallas",
+Lucy     => "Exeter",
+Ian      => "Reading",
+Samantha => "Oregon"
+);
+for (keys %where) {
+print "$_ lives in $where{$_}\n"; }
 
+#!/usr/bin/perl
+# Exercises
+use warnings;
+use strict;
+my $a;
+my $b;
+my $c;
+#($a, $b) = (10, 20, 30); #1020
+#($a, $b, $c) = (10, 20); #1020
+#($a, $b, $c) = 10; #10
+#$a = (10,20); #20
+#print $a,$b,$c,"\n";
 
+print (('aa'..'bb'), "\n");
+print (('a0'..'b9'), "\n");
+
+my %phone_number;
+%phone_number = (
+Hong => 13311186611,
+Jason => 13699551033
+);
+
+print $phone_number{Hong};
+print "\n";
