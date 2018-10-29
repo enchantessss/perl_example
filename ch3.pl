@@ -1,4 +1,47 @@
 # #!/usr/bin/perl
+#  # mixedlist.plx
+# use warnings;
+# use strict;
+# my $test = 30;
+# print
+# "Here is a list containing strings, (this one) ", "numbers (",
+# 3.6,
+# ") and variables: ",
+# $test, "\n";
+#  
+# print ("Here is a list containing strings, (this one) numbers (3.6) and variables: $test\n"); 
+#  
+#  
+# #!/usr/bin/perl
+# # badlist.plx
+# use warnings;
+# use strict;
+# print qw(one,two,three,four), "\n"; 
+# print qw\one,two,three,four\, "\n"; 
+# print qw<one,two,three,four>, "\n"; 
+#  
+#  
+# #!/usr/bin/perl
+# # access.plx
+# use warnings;
+# use strict;
+# print (('salt', 'vinegar', 'mustard', 'pepper')[2]); 
+# print "\n"; 
+# 
+# #!/usr/bin/perl
+# # months.plx
+# use warnings;
+# use strict;
+# my $month = 3;
+# print qw(
+#     January February    March 
+#     April   May         June
+#     July    August      September
+#     October November    December )[$month], "\n";
+
+
+
+# #!/usr/bin/perl
 # # months.plx
 # use warnings;
 # use strict;
