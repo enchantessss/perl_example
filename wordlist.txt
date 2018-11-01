@@ -1,0 +1,6 @@
+For a really thorough result, you'll need to use a file containing every word in the dictionary – be prepared to wait though if you do! For the sake of the example however, any text-based file will do (though it'll help if it's in English). A bobolink, in case you're wondering, is a migratory American songbird, otherwise known as a ricebird or reedbird.ink
+house
+onew_ink
+lin2
+lin3
+lin4_in
